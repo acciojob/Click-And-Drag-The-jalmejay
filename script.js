@@ -24,6 +24,6 @@ container.addEventListener('mousemove', (e) => {
   if (!isDown) return;
   e.preventDefault();
   const x = e.pageX - container.offsetLeft;
-  const walk = (x - startX); // pixels moved
+  const walk = x - startX;
   container.scrollLeft = scrollLeft - walk;
 });
